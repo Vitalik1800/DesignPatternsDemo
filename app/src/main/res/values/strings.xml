@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DesignPatternsDemo</string>
+    <string name="select_pattern">Оберіть патерн проєктування</string>
+    <string name="singleton">🔒 Singleton</string>
+    <string name="factory_method">🏭 Factory Method</string>
+    <string name="builder">🔨 Builder</string>
+    <string name="observer">📡 Observer</string>
+    <string name="mvc">🎮 MVC</string>
+    <string name="enterButton">Натисніть кнопку, щоб побачити приклад</string>
+</resources>

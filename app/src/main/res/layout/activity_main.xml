@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1e1e1e">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#252526">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="🛠️ Design Patterns Demo"
+            app:titleTextColor="#00b7eb" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_pattern"
+                android:textColor="#d4d4d4"
+                android:textSize="20sp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/singletonBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/singleton"
+                android:backgroundTint="#43a047"
+                android:textColor="#fff"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/factoryBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/factory_method"
+                android:backgroundTint="#00b7eb"
+                android:textColor="#fff"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/builderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/builder"
+                android:backgroundTint="#ffb74d"
+                android:textColor="#000"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/observerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/observer"
+                android:backgroundTint="#d32f2f"
+                android:textColor="#fff"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/mvcButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mvc"
+                android:backgroundTint="#9c27b0"
+                android:textColor="#fff"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enterButton"
+                android:textColor="#aaaaaa"
+                android:background="#252526"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:minHeight="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
